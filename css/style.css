@@ -19,16 +19,16 @@ body {
     align-items: center;
 }
 
-.navbar svg {
-    position: absolute;
-    top: 24px;
+.logo {
+    margin-top: 1.5em;
     width: 20vw;
+    max-width: 125px;
 }
 
 .burger {
     position: absolute;
     display: block;
-    top: 18px;
+    top: 22px;
     right: 4vw;
     cursor: pointer;
     z-index: 2;
@@ -63,8 +63,10 @@ body {
     top: 0;
     right: 0;
     width: 360px;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     padding-top: 85px;
+    padding-bottom: 2em;
     background-color: white;
     transform: translateX(400%);
     z-index: 1;
@@ -162,6 +164,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 
 
 @keyframes menu-slide-open {
