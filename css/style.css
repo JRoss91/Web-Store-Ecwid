@@ -20,13 +20,15 @@ body {
 }
 
 .navbar svg {
-    width: 11.5vw;
+    position: absolute;
+    top: 24px;
+    width: 20vw;
 }
 
 .burger {
     position: absolute;
     display: block;
-    top: 22px;
+    top: 18px;
     right: 4vw;
     cursor: pointer;
     z-index: 2;
@@ -60,7 +62,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 375px;
+    width: 360px;
     height: 100vh;
     padding-top: 85px;
     background-color: white;
@@ -81,7 +83,7 @@ body {
 }
 
 .nav-out {
-    width: 375px;
+    width: 360px;
     transform: translateX(100%);
     box-sizing: border-box;
     opacity: 0;
