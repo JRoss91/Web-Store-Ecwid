@@ -205,6 +205,15 @@ body {
   }
 }
 
+@keyframes fade-in {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+
 
 
 
@@ -307,15 +316,36 @@ body {
     width: 300px;
     padding: 3em;
     box-shadow: 10px 10px 10px 10px gray;
-    opacity: 100%;
-  }
-
-  .sell-nav:hover .sell-nav-in {
-    display: block;
+    
   }
 
   .nav-in a {
     display: flex;
+  }
+
+  .sell-nav:hover .sell-nav-in {
+    display: block;
+    animation: fade-in 0.4s;
+  }
+
+  .market-nav:hover .market-nav-in {
+    display: block;
+    animation: fade-in 0.4s;
+  }
+
+  .manage-nav:hover .manage-nav-in {
+    display: block;
+    animation: fade-in 0.4s;
+  }
+
+  .learn-nav:hover .learn-nav-in {
+    display: block;
+    animation: fade-in 0.4s;
+  }
+
+  .partners-nav:hover .partners-nav-in {
+    display: block;
+    animation: fade-in 0.4s;
   }
 
   .open-nav {
