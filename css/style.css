@@ -216,9 +216,11 @@ body {
 @keyframes fade-in {
     from {
       opacity: 0%;
+      transform: rotateX(-100deg);
     }
     to {
       opacity: 100%;
+      transform: rotateX(0deg);
     }
   }
 
@@ -336,8 +338,33 @@ body {
     top: 75px;
     width: 300px;
     padding: 2em;
-    box-shadow: 10px 10px 10px 10px gray; 
+    box-shadow: 0px 0px 50px 10px #e6e6e6; 
+    transform-origin: 0% 0%;
     animation: fade-in 0.4s; 
+  }
+
+  .left .open-nav::before {
+    content: "";
+    width: 30px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    z-index: 99;
+    top: -20px;
+    left: 15px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .right .open-nav::before {
+    content: "";
+    width: 30px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    z-index: 99;
+    top: -20px;
+    right: 25px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   }
   
   .close-nav {
