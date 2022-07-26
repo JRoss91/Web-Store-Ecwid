@@ -222,6 +222,15 @@ body {
     }
   }
 
+  @keyframes bump {
+    from {
+        padding-left: 0;
+    }
+    to {
+        padding-left: 1em;
+    }
+    
+  }
 
 
 
@@ -356,6 +365,16 @@ body {
     font-size: 24px;
     font-weight: 600;
     text-decoration: underline 5px yellow;
+  }
+
+  .nav-in .drop-down-header::after {
+    content: url(/images/right-arrow.png);
+    transform: scale(0.8);
+  }
+
+  .nav-in .drop-down-header:hover::after { 
+    transform: scale(0.8);
+    animation: bump 0.2s forwards;
   }
 
   .drop-down-desc {
