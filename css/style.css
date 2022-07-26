@@ -11,6 +11,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
+  word-spacing: 3px;
 }
 
 .navbar {
@@ -26,7 +27,7 @@ body {
   top: 1.5em;
   left: 4vw;
   width: 20vw;
-  max-width: 125px;
+  max-width: 110px;
 }
 
 .burger {
@@ -177,6 +178,13 @@ body {
     display: none;
 }
 
+.drop-down-desc {
+    display: none;
+  }
+
+
+
+
 @keyframes menu-slide-open {
   from {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -264,7 +272,7 @@ body {
     text-decoration: none;
     color: black;
     font-size: 18px;
-    padding: 0em 0em;
+    padding: 0.5em 0em;
   }
 
   .nav-wrapper {
@@ -309,53 +317,53 @@ body {
 
   .nav-in {
     display: none;
+  }
+
+  .open-nav {
+    display: block;
     margin-left: 0em;
     font-size: 1em;
     position: absolute;
     top: 75px;
     width: 300px;
-    padding: 3em;
-    box-shadow: 10px 10px 10px 10px gray;
-    
-  }
-
-  .nav-in a {
-    display: flex;
-  }
-
-  .sell-nav:hover .sell-nav-in {
-    display: block;
-    animation: fade-in 0.4s;
-  }
-
-  .market-nav:hover .market-nav-in {
-    display: block;
-    animation: fade-in 0.4s;
-  }
-
-  .manage-nav:hover .manage-nav-in {
-    display: block;
-    animation: fade-in 0.4s;
-  }
-
-  .learn-nav:hover .learn-nav-in {
-    display: block;
-    animation: fade-in 0.4s;
-  }
-
-  .partners-nav:hover .partners-nav-in {
-    display: block;
-    animation: fade-in 0.4s;
-  }
-
-  .open-nav {
-    height: fit-content;
-    animation: menu-slide-open 0.4s ease-in-out;
+    padding: 2em;
+    box-shadow: 10px 10px 10px 10px gray; 
+    animation: fade-in 0.4s; 
   }
   
   .close-nav {
     animation: none;
     height: auto;
+  }
+
+  .col-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav-in a {
+    display: flex;
+    font-weight: 600;
+  }
+
+  .nav-header-bg {
+    background-color: transparent;
+  }
+
+  .nav-in .drop-down-header {
+    margin-top: -20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: underline 5px yellow;
+  }
+
+  .drop-down-desc {
+    display: flex;
+    color: #535353;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #adadad;
   }
 
   .start-header {

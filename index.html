@@ -128,15 +128,22 @@
                   </div>
                 </a>
                 <div class="sell-nav-in nav-in close-nav">
-                  <a href="#">Sell anywhere</a>
+                  <a href="#" class="drop-down-header">Sell anywhere</a>
+                  <p class="drop-down-desc">Sell around the world on a website, social media, marketplaces like Amazon and eBay, and anywhere else that strikes your fancy.</p>
+                  <div class="col-nav">
+                    <div class="col-one">
                   <a href="#">Website</a>
                   <a href="#">Instagram</a>
                   <a href="#">TikTok</a>
                   <a href="#">Facebook</a>
+                     </div>
+                     <div class="col-two">
                   <a href="#">Google</a>
                   <a href="#">Amazon</a>
                   <a href="#">POS</a>
                   <a href="#">ShopApp</a>
+                    </div>
+                </div>
                 </div>
               </div>
 
@@ -165,7 +172,8 @@
                   </div>
                 </a>
                 <div class="market-nav-in nav-in close-nav">
-                  <a href="#">Market your business</a>
+                  <a href="#" class="drop-down-header">Market your business</a>
+                  <p class="drop-down-desc">Marketing your business has never been easier. Google advertising, Facebook advertising, Search Engine Optimization, and more. Yes please.</p>
                   <a href="#">Google Ads</a>
                   <a href="#">Facebook</a>
                   <a href="#">Email</a>
@@ -197,7 +205,8 @@
                   </div>
                 </a>
                 <div class="manage-nav-in nav-in close-nav">
-                  <a href="#">Manage your store</a>
+                  <a href="#" class="drop-down-header">Manage your store</a>
+                  <p class="drop-down-desc">Simplicity at its finest.</p>
                   <a href="#">Mobile</a>
                   <a href="#">App Market</a>
                   <a href="#">Discount Shopping</a>
@@ -232,15 +241,23 @@
                   </div>
                 </a>
                 <div class="learn-nav-in nav-in close-nav">
-                  <a href="#">Learn</a>
+                  <a href="#" class="drop-down-header">Learn</a>
+                  <p class="drop-down-desc">Get the knowledge you need to build a successful e-commerce store with Ecwid’s comprehensive user guides.</p>
+                  <div class="col-nav">
+                    <div class="col-one">
                   <a href="#">Demo</a>
-                  <a href="#">Help Center</a>
                   <a href="#">Blog</a>
-                  <a href="#">Customer Support</a>
                   <a href="#">Guides</a>
-                  <a href="#">Ecwid Academy</a>
                   <a href="#">Podcast</a>
+                  </div>
+                  <div class="col-two">
+                  
+                  <a href="#">Help Center</a>
+                  <a href="#">Customer Support</a>
+                  <a href="#">Ecwid Academy</a>
                   <a href="#">Tutorials</a>
+                </div>
+                </div>
                 </div>
               </div>
 
@@ -269,7 +286,8 @@
                   </div>
                 </a>
                 <div class="partners-nav-in nav-in close-nav">
-                  <a href="#">Partners</a>
+                  <a href="#" class="drop-down-header">Partners</a>
+                  <p class="drop-down-desc">Let’s work together to help small businesses sell online. Learn more about our partnership options for companies of any size and industry.</p>
                   <a href="#">Resell</a>
                   <a href="#">Refer</a>
                   <a href="#">Build an App</a>
@@ -341,37 +359,132 @@
       const partnersNav = document.querySelector(".partners-nav");
       const partnersNavIn = document.querySelector(".partners-nav-in");
       const partnersArrow = document.querySelector(".partners-arrow");
+      var screen = window.matchMedia("(min-width: 1025px)");
 
+    if (screen.matches) {
       sellNav.addEventListener("click", () => {
         sellHeader.classList.toggle("nav-header-bg");
         sellArrow.classList.toggle("arrow-nav");
         sellNavIn.classList.toggle("open-nav");
         sellNavIn.classList.toggle("close-nav");
+        marketNavIn.classList.remove("open-nav");
+        marketNavIn.classList.add("close-nav");
+        manageNavIn.classList.remove("open-nav");
+        manageNavIn.classList.add("close-nav");
+        learnNavIn.classList.remove("open-nav");
+        learnNavIn.classList.add("close-nav");
+        partnersNavIn.classList.remove("open-nav");
+        partnersNavIn.classList.add("close-nav");
       });
       marketNav.addEventListener("click", () => {
         marketHeader.classList.toggle("nav-header-bg");
         marketArrow.classList.toggle("arrow-nav");
         marketNavIn.classList.toggle("open-nav");
         marketNavIn.classList.toggle("close-nav");
+        sellNavIn.classList.remove("open-nav");
+        sellNavIn.classList.add("close-nav");
+        manageNavIn.classList.remove("open-nav");
+        manageNavIn.classList.add("close-nav");
+        learnNavIn.classList.remove("open-nav");
+        learnNavIn.classList.add("close-nav");
+        partnersNavIn.classList.remove("open-nav");
+        partnersNavIn.classList.add("close-nav");
       });
       manageNav.addEventListener("click", () => {
         manageHeader.classList.toggle("nav-header-bg");
         manageArrow.classList.toggle("arrow-nav");
         manageNavIn.classList.toggle("open-nav");
         manageNavIn.classList.toggle("close-nav");
+        sellNavIn.classList.remove("open-nav");
+        sellNavIn.classList.add("close-nav");
+        marketNavIn.classList.remove("open-nav");
+        marketNavIn.classList.add("close-nav");
+        learnNavIn.classList.remove("open-nav");
+        learnNavIn.classList.add("close-nav");
+        partnersNavIn.classList.remove("open-nav");
+        partnersNavIn.classList.add("close-nav");
       });
       learnNav.addEventListener("click", () => {
         learnHeader.classList.toggle("nav-header-bg");
         learnArrow.classList.toggle("arrow-nav");
         learnNavIn.classList.toggle("open-nav");
         learnNavIn.classList.toggle("close-nav");
+        sellNavIn.classList.remove("open-nav");
+        sellNavIn.classList.add("close-nav");
+        marketNavIn.classList.remove("open-nav");
+        marketNavIn.classList.add("close-nav");
+        manageNavIn.classList.remove("open-nav");
+        manageNavIn.classList.add("close-nav");
+        partnersNavIn.classList.remove("open-nav");
+        partnersNavIn.classList.add("close-nav");
       });
       partnersNav.addEventListener("click", () => {
         partnersHeader.classList.toggle("nav-header-bg");
         partnersArrow.classList.toggle("arrow-nav");
         partnersNavIn.classList.toggle("open-nav");
         partnersNavIn.classList.toggle("close-nav");
+        sellNavIn.classList.remove("open-nav");
+        sellNavIn.classList.add("close-nav");
+        marketNavIn.classList.remove("open-nav");
+        marketNavIn.classList.add("close-nav");
+        manageNavIn.classList.remove("open-nav");
+        manageNavIn.classList.add("close-nav");
+        learnNavIn.classList.remove("open-nav");
+        learnNavIn.classList.add("close-nav");
       });
+    }
+    else {
+        sellNav.addEventListener("click", () => {
+        sellHeader.classList.toggle("nav-header-bg");
+        sellArrow.classList.toggle("arrow-nav");
+        sellNavIn.classList.toggle("open-nav");
+        sellNavIn.classList.toggle("close-nav");
+        marketNavIn.classList.remove("open-nav");
+        manageNavIn.classList.remove("open-nav");
+        learnNavIn.classList.remove("open-nav");
+        partnersNavIn.classList.remove("open-nav");
+      });
+      marketNav.addEventListener("click", () => {
+        marketHeader.classList.toggle("nav-header-bg");
+        marketArrow.classList.toggle("arrow-nav");
+        marketNavIn.classList.toggle("open-nav");
+        marketNavIn.classList.toggle("close-nav");
+        sellNavIn.classList.remove("open-nav");
+        manageNavIn.classList.remove("open-nav");
+        learnNavIn.classList.remove("open-nav");
+        partnersNavIn.classList.remove("open-nav");
+      });
+      manageNav.addEventListener("click", () => {
+        manageHeader.classList.toggle("nav-header-bg");
+        manageArrow.classList.toggle("arrow-nav");
+        manageNavIn.classList.toggle("open-nav");
+        manageNavIn.classList.toggle("close-nav");
+        sellNavIn.classList.remove("open-nav");
+        marketNavIn.classList.remove("open-nav");
+        learnNavIn.classList.remove("open-nav");
+        partnersNavIn.classList.remove("open-nav");
+      });
+      learnNav.addEventListener("click", () => {
+        learnHeader.classList.toggle("nav-header-bg");
+        learnArrow.classList.toggle("arrow-nav");
+        learnNavIn.classList.toggle("open-nav");
+        learnNavIn.classList.toggle("close-nav");
+        sellNavIn.classList.remove("open-nav");
+        marketNavIn.classList.remove("open-nav");
+        manageNavIn.classList.remove("open-nav");
+        partnersNavIn.classList.remove("open-nav");
+      });
+      partnersNav.addEventListener("click", () => {
+        partnersHeader.classList.toggle("nav-header-bg");
+        partnersArrow.classList.toggle("arrow-nav");
+        partnersNavIn.classList.toggle("open-nav");
+        partnersNavIn.classList.toggle("close-nav");
+        sellNavIn.classList.remove("open-nav");
+        marketNavIn.classList.remove("open-nav");
+        manageNavIn.classList.remove("open-nav");
+        learnNavIn.classList.remove("open-nav");
+      });
+    }
     </script>
   </body>
 </html>
