@@ -1,3 +1,11 @@
+:root {
+   --yellow: #fae053;
+   --orange: #f1b280;
+   --darkGreen: #06945b;
+   --lightGreen: #68e5a2;
+   --blue: #395be0;
+}
+
 *,
 *::before,
 *::after {
@@ -182,6 +190,108 @@ body {
     display: none;
   }
 
+.page-content {
+    width: 85%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.top {
+    text-align: center;
+}
+
+.yellow .top-header {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.all-header {
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.all-desc {
+    font-size: 28px;
+    line-height: 1.5em;
+}
+
+.all-button {
+    padding: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 20px 0;
+    transition: all 0.6s ease;
+}
+
+.all-button::after {
+    content: url(/images/right-arrow.png);
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.button-mask {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.all-button:hover {
+    opacity: 0.9;
+}
+
+.page-content a {
+    text-decoration: none;
+    color: black;
+}
+
+.top-button {
+    background-color: var(--yellow);
+}
+
+.orange-button {
+    background-color: var(--orange);
+}
+
+.page-content img {
+    width: 100%;
+    max-width: 750px;
+}
+
+.credit-card {
+    margin-bottom: 60px;
+    font-size: 18px;
+    color: #535353;
+}
+
+.awards {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+.award-card {
+    padding: 10px;
+}
+
+.award-icon {
+    width: 100%;
+    height: 30px;
+    object-fit: contain;
+}
+
+.trustpilot {
+    margin-top: -4px;
+    margin-bottom: 4px;
+}
 
 
 
