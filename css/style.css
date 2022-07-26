@@ -27,7 +27,10 @@ body {
   height: 75px;
   background-color: #ffffff;
   padding: 0 0vw;
+  margin-top: -40px;
   align-items: center;
+  position: fixed;
+  box-shadow: 0 0 3px 3px #e6e6e6;
 }
 
 .logo {
@@ -81,7 +84,6 @@ body {
   padding-top: 85px;
   padding-bottom: 2em;
   background-color: white;
-  /*  transform: translateX(400%); */
   z-index: 1;
   box-shadow: -300px 0px 0px 500px #00000080;
   transition: all 0.2s;
@@ -89,7 +91,6 @@ body {
 }
 
 .open-main-nav {
-  /*  transform: translateX(0%); */
   opacity: 100%;
 }
 
@@ -204,6 +205,7 @@ body {
     margin-top: 40px;
     margin-bottom: 20px;
     font-size: 60px;
+    padding-top: 60px;
 }
 
 .all-header {
@@ -262,7 +264,7 @@ body {
 
 .page-content img {
     width: 100%;
-    max-width: 750px;
+    max-width: 700px;
 }
 
 .credit-card {
@@ -347,13 +349,17 @@ body {
 }
 
 .info-card {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-size: 24px;
     line-height: 1.5em;
 }
 
 .info-col-desc {
     margin-top: 1em;
+}
+
+.instagram {
+    font-family: 'Satisfy';
 }
 
 
@@ -425,6 +431,9 @@ body {
   .navbar {
     width: 100%;
     display: flex;
+    position: fixed;
+    z-index: 99;
+    margin-top: 0;
   }
 
   .burger {
@@ -606,5 +615,66 @@ body {
 
   .testi-desc {
     width: 60%;
+  }
+
+  .page-content p {
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+
+  .page-info {
+    width: 48%;
+    margin-left: 8vw;
+  }
+
+  .info-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5em;
+  }
+
+  .info-card {
+    margin-top: 70px;
+  }
+
+  .page-info .orange-img {
+    position: absolute;
+    right: -40px;
+    width: 45%;
+    transform: translateY(-150px);
+  }
+
+  .all-button {
+    width: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 3px;
+    border-radius: 30px;
+  }
+
+  .button-mask {
+    width: 45%;
+    border-radius: 30px;
+  }
+
+  .yellow {
+    margin-top: 170px;
+  }
+
+  .yellow .top-header {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    padding-top: 0px;
 }
+
+  .top-desc {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .top-button {
+    max-width: 400px;
+    margin: 40px auto 20px auto;
+  }
 }
