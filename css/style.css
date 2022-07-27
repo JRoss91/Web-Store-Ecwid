@@ -201,6 +201,7 @@ body {
 
 .page-content {
     width: 85%;
+    max-width: 1150px;
     box-sizing: border-box;
     margin: 0 auto;
 }
@@ -1192,7 +1193,46 @@ footer {
     overflow: hidden;
     transition: max-height 0.15s ease-out;
 }
+}
 
 
+@media screen and (min-width: 1500px) {
+    .page-info .orange-img {
+        position: absolute;
+        right: 6vw;
+        width: 45%;
+        transform: translateY(-200px);
+      }
+    
+      .flip-page-info .green-img {
+        position: absolute;
+        left: 6vw;
+        width: 45%;
+        transform: translateY(-210px);
+      }
+    
+      .page-info .blue-img {
+        position: absolute;
+        right: 4vw;
+        width: 45%;
+        transform: translateY(-170px);
+      }
 
+      .testi-icon {
+        display:block;
+        position: absolute;
+        right: 22vw;
+        width: 100px;
+      }
+    
+    .green-testi .testi-icon {
+        display:block;
+        position: absolute;
+        left: 22vw;
+        width: 100px;
+      }
+
+      .green-testi .testi-desc, .green-testi .testi-profile {
+        margin-left: 25vw;
+    }
 }
