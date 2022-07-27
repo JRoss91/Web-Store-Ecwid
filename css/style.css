@@ -390,9 +390,45 @@ body {
     display: none;
 }
 
+.map {
+    padding: 9vw 7vw;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: url(/images/map.png);
+}
 
+.map-heading {
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 47px;
+    padding-bottom: 25px;
+}
 
+.map-desc {
+    font-size: 1.7em;
+    line-height: 1.7em;
+    padding-bottom: 45px;
+}
 
+.map-nums {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.big-num {
+    font-size: 110px;
+    font-weight: 600;
+}
+
+.map-nums p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.map-shapes {
+    display: none;
+}
 
 
 
@@ -808,6 +844,80 @@ h2 {
 
 .testi-icon img {
     object-fit: contain;
+}
+
+.map {
+    display: grid;
+    align-items: center;
+    box-sizing: border-box;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2em;
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 60px;
+}
+
+.map-info {
+    max-width: 320px;
+    padding-left: 2vw;
+}
+
+.map-heading {
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 35px;
+    max-width: 260px;
+    padding-bottom: 25px;
+}
+
+.map-desc {
+    font-size: 1.7em;
+    line-height: 1.7em;
+    padding-bottom: 45px;
+}
+
+.map-nums {
+    display: block;
+    align-items: center;
+}
+
+.big-num {
+    font-size: 110px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.map-nums p {
+    font-size: 1em;
+    text-align: center;
+}
+
+.map-shapes {
+    display: contents;
+}
+
+.map-shapes .shape-1 {
+    max-width: 80px;
+    position: absolute;
+    z-index: 100;
+    right: 12vw;
+    transform: translateY(-220px);
+}
+
+.map-shapes .shape-2 {
+    max-width: 40px;
+    position: absolute;
+    z-index: 100;
+    right: 25vw;
+    transform: translateY(145px);
+}
+
+.map-shapes .shape-3 {
+    max-width: 35px;
+    position: absolute;
+    z-index: 100;
+    left: 35vw;
+    transform: translateY(-150px);
 }
 
 }
