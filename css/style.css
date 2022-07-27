@@ -13,6 +13,11 @@
   margin: 0;
 }
 
+a {
+    position: relative;
+    z-index: 99;
+}
+
 body {
   width: 98vw;
   height: 100vh;
@@ -30,7 +35,7 @@ body {
   margin-top: -40px;
   align-items: center;
   position: fixed;
-  z-index: 999;
+  z-index: 101;
   box-shadow: 0 0 6px 2px #e6e6e6;
 }
 
@@ -89,10 +94,12 @@ body {
   box-shadow: -300px 0px 0px 500px #00000080;
   transition: all 0.2s;
   opacity: 0;
+  transform: translateX(400%);
 }
 
 .open-main-nav {
   opacity: 100%;
+  transform: translateX(0%);
 }
 
 .master-nav a {
@@ -654,7 +661,7 @@ footer li {
     width: 100%;
     display: flex;
     position: fixed;
-    z-index: 999;
+    z-index: 101;
     margin-top: 0;
   }
 
@@ -691,7 +698,7 @@ footer li {
 
   .nav-wrapper {
     display: flex;
-    width: calc(100% - 0vw);
+    width: 100%;
   }
 
   .left {
