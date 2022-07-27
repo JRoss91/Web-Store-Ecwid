@@ -680,7 +680,7 @@ footer li {
     padding-top: 0px;
     padding-bottom: 0em;
     background-color: transparent;
-    /*  transform: translateX(400%); */
+    transform: translateX(0%);
     z-index: 1;
     box-shadow: none;
     transition: all 0.2s;
