@@ -430,7 +430,54 @@ body {
     display: none;
 }
 
+.icon-card {
+    margin: 8vw 0;
+    padding: 8vw;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 28px;
+}
 
+.icon-card img {
+    max-width: 100px;
+    margin-bottom: 8vw;
+}
+
+.icon-card .icon-card-heading {
+    font-weight: 600;
+}
+
+.icon-card .icon-card-desc {
+    margin: 8vw 0 16vw 0;
+}
+
+.icon-card .icon-card-cta {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.icon-card-cta::after {
+    content: url(/images/right-arrow.png);
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.cta-info {
+    margin: 20vw 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.cta-heading {
+    font-family: 'Merriweather';
+}
+
+.cta p {
+    font-size: 20px;
+    color: #535353;
+    margin-bottom: 8vw;
+}
 
 
 @keyframes menu-slide-open {
@@ -502,7 +549,7 @@ body {
     width: 100%;
     display: flex;
     position: fixed;
-    z-index: 99;
+    z-index: 999;
     margin-top: 0;
   }
 
@@ -918,6 +965,76 @@ h2 {
     z-index: 100;
     left: 35vw;
     transform: translateY(-150px);
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
+
+.icon-card {
+    margin: 8vw 0;
+    padding: 2vw;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 28px;
+}
+
+.icon-card img {
+    max-width: 70px;
+    margin-bottom: 2vw;
+}
+
+.icon-card .icon-card-heading {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.icon-card .icon-card-desc {
+    margin: 1vw 0 6vw 0;
+    height: 100px;
+}
+
+.icon-card .icon-card-cta {
+    font-weight: 600;
+    font-size: 0.7em;
+    display: flex;
+    align-items: center;
+}
+
+.icon-card-cta::after {
+    content: url(/images/right-arrow.png);
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.cta-info {
+    margin: 0vw 0;
+    padding: 3vw;
+    border: 2px solid black;
+    border-radius: 60px;
+    font-size: 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.cta-heading {
+    font-family: 'Merriweather';
+    text-align: left;
+    margin-left: 2vw;
+}
+
+.cta p {
+    font-size: 20px;
+    color: #535353;
+    margin-bottom: 0vw;
+}
+
+.get-started {
+    transform: translateY(-20px);
 }
 
 }
