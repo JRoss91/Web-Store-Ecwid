@@ -3,7 +3,7 @@
    --orange: #ffc698;
    --darkGreen: #06945b;
    --lightGreen: #68e5a2;
-   --blue: #395be0;
+   --blue: #167bff;
 }
 
 *,
@@ -14,7 +14,7 @@
 }
 
 body {
-  width: 100vw;
+  width: 98vw;
   height: 100vh;
   font-family: "Source Sans Pro", sans-serif;
   box-sizing: border-box;
@@ -30,7 +30,7 @@ body {
   margin-top: -40px;
   align-items: center;
   position: fixed;
-  box-shadow: 0 0 3px 3px #e6e6e6;
+  box-shadow: 0 0 6px 2px #e6e6e6;
 }
 
 .logo {
@@ -117,7 +117,7 @@ body {
 .nav-header {
   display: flex;
   align-items: center;
-  font-weight: 700;
+  font-weight: 600;
   padding: 0.7em 2em;
 }
 
@@ -222,11 +222,11 @@ body {
 }
 
 .all-button {
-    padding: 20px;
+    padding: 11px;
     font-size: 28px;
     font-weight: 600;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -242,7 +242,9 @@ body {
 
 .button-mask {
     background-color: black;
-    border-radius: 10px;
+    border-radius: 20px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .all-button:hover {
@@ -256,10 +258,21 @@ body {
 
 .top-button {
     background-color: var(--yellow);
+    max-width: 400px;
+    margin: 30px auto 20px auto;
 }
 
 .orange-button {
     background-color: var(--orange);
+}
+
+.green-button {
+    background-color: var(--lightGreen);
+}
+
+.blue-button {
+    background-color: var(--blue);
+    color: white;
 }
 
 .page-content img {
@@ -275,6 +288,7 @@ body {
 
 .awards {
     margin-top: 60px;
+    margin-bottom: 10vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2em;
@@ -318,6 +332,8 @@ body {
 
 .testi-desc {
     width: 100%;
+    line-height: 1.7em;
+    font-size: 1.7em;
 }
 
 .testi-profile {
@@ -329,7 +345,7 @@ body {
 .testi-img {
     width: 60px;
     height: 60px;
-    margin: 2em 1em 2em 0;
+    margin: 3em 1em 2em 0;
 }
 
 .testi-img img {
@@ -348,8 +364,16 @@ body {
     margin: 70px 0;
 }
 
+.green-img {
+    margin: 70px 0;
+}
+
+.blue-img {
+    margin: 70px 0;
+}
+
 .info-card {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 24px;
     line-height: 1.5em;
 }
@@ -361,6 +385,16 @@ body {
 .instagram {
     font-family: 'Satisfy';
 }
+
+.testi-icon {
+    display: none;
+}
+
+
+
+
+
+
 
 
 @keyframes menu-slide-open {
@@ -497,7 +531,7 @@ body {
   .nav-header {
     display: flex;
     align-items: center;
-    font-weight: 700;
+    font-weight: 600;
     padding: 0;
     margin: 0 1vw;
   }
@@ -513,6 +547,7 @@ body {
 
   .open-nav {
     display: block;
+    background-color: white;
     margin-left: 0em;
     font-size: 1em;
     position: absolute;
@@ -613,18 +648,26 @@ body {
     display: none;
   }
 
-  .testi-desc {
-    width: 60%;
-  }
+  .awards {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
+}
 
   .page-content p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5em;
   }
 
   .page-info {
     width: 48%;
     margin-left: 8vw;
+  }
+
+  .flip-page-info {
+    width: 48%;
+    margin-left: 36vw;
   }
 
   .info-cols {
@@ -639,22 +682,40 @@ body {
 
   .page-info .orange-img {
     position: absolute;
-    right: -40px;
+    right: -35px;
     width: 45%;
-    transform: translateY(-150px);
+    transform: translateY(-170px);
+  }
+
+  .flip-page-info .green-img {
+    position: absolute;
+    left: -35px;
+    width: 45%;
+    transform: translateY(-210px);
+  }
+
+  .page-info .blue-img {
+    position: absolute;
+    right: -35px;
+    width: 45%;
+    transform: translateY(-170px);
   }
 
   .all-button {
     width: 100%;
     font-size: 18px;
     box-sizing: border-box;
-    padding: 3px;
+  }
+
+  .sub-button {
     border-radius: 30px;
+    padding: 3px;
   }
 
   .button-mask {
     width: 45%;
     border-radius: 30px;
+    margin: 0 auto;
   }
 
   .yellow {
@@ -677,4 +738,76 @@ body {
     max-width: 400px;
     margin: 40px auto 20px auto;
   }
+
+  .testi {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 60px;
+    padding: 3vw 6vw 0px 6vw;
+    margin: 30px auto 10vw auto;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.testi-desc {
+    width: 60%;
+    line-height: 1.7em;
+}
+
+.green-testi .testi-desc, .green-testi .testi-profile {
+    margin-left: 30vw;
+}
+
+.blue-testi .testi-desc, .blue-testi .testi-name {
+    color: white;
+}
+
+.blue-testi .testi-icon {
+    filter: invert(100%);
+}
+
+.testi .testi-desc {
+    font-size: 1em;
+}
+
+  .testi-img {
+    width: 50px;
+    height: 50px;
+    margin: 1.5em 1em 0em 0;
+}
+
+.testi-name {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.sub-mask {
+    margin-left: 0;
+}
+
+.facebook, .instagram {
+    font-size: 24px;
+}
+
+.testi-icon {
+    display:block;
+    position: absolute;
+    right: 12vw;
+    width: 100px;
+}
+
+.green-testi .testi-icon {
+    display:block;
+    position: absolute;
+    left: 12vw;
+    width: 100px;
+}
+
+.testi-icon img {
+    object-fit: contain;
+}
+
 }
