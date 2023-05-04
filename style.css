@@ -244,7 +244,7 @@ body {
 }
 
 .all-button::after {
-    content: url(/images/right-arrow.png);
+    content: url(images/right-arrow.png);
     margin-top: 5px;
     margin-left: 10px;
 }
@@ -403,7 +403,7 @@ body {
     padding: 9vw 7vw;
     border: 2px solid black;
     border-radius: 20px;
-    background: url(/images/map.png);
+    background: url(images/map.png);
 }
 
 .map-heading {
@@ -471,7 +471,7 @@ body {
 }
 
 .icon-card-cta::after {
-    content: url(/images/right-arrow.png);
+    content: url(images/right-arrow.png);
     margin-top: 5px;
     margin-left: 10px;
 }
@@ -807,7 +807,7 @@ footer li {
   }
 
   .nav-in .drop-down-header::after {
-    content: url(/images/right-arrow.png);
+    content: url(images/right-arrow.png);
     transform: scale(0.8);
   }
 
@@ -1117,7 +1117,7 @@ h2 {
 }
 
 .icon-card-cta::after {
-    content: url(/images/right-arrow.png);
+    content: url(images/right-arrow.png);
     margin-top: 5px;
     margin-left: 10px;
 }
